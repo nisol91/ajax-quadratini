@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+.container {
+  background: lightcoral;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.result {
+  width: 300px;
+  height: 100px;
+}
+.selection {
+  border-radius: 3px;
+  height: 50px;
+  width: 500px;
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.button-creation {
+  border-radius: 3px;
+  height: 200px;
+  width: 200px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#my-button-i {
+  height: 50px;
+  width: 100%;
+  margin: 5px;
+}
+#my-button-ii {
+  border: 2px solid black;
+  height: 50px;
+  width: 100%;
+  margin: 5px;
+}
+p {
+  width: 400px;
+}
+.luce {
+  font-size: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.white {
+  color: white;
+}
+.black {
+  background: black;
+}
+.templates {
+  display: none;
+}
+.griglia {
+  height: 400px;
+  width: 400px;
+  /* background: lightgrey; */
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+.elem {
+  background: lightgrey;
+  border: 1px solid grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.griglia .elem h1 {
+  font-size: 15px;
+  cursor: pointer;
+}
