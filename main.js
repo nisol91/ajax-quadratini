@@ -2,29 +2,13 @@
 //CHIAMATA AJAX ALL API
 
 
-//modo I : togliendo async
-// function random_number() {
-//   var cpu_n
-//   $.ajax({
-//     url: 'https://www.boolean.careers/api/random/int',
-//     async: false,
-//     type: 'GET',
-//     success: function(data) {
-//       console.log("success");
-//       cpu_n = data.response;
-//     },
-//     error: function() {
-//       console.log("error");
-//     }
-//   });
-//   return cpu_n
-// }
+//modo I : togliendo async(sconsigliato)
 
-//modo II callback function
 function random_number() {
   var cpu_n
   $.ajax({
     url: 'https://www.boolean.careers/api/random/int',
+    async: false,
     type: 'GET',
     success: function(data) {
       console.log("success");
@@ -36,6 +20,25 @@ function random_number() {
   });
   return cpu_n
 }
+
+//modo II callback function
+//
+// function random_number(cpu_n) {
+//   var cpu_n
+//   $.ajax({
+//     url: 'https://www.boolean.careers/api/random/int',
+//     type: 'GET',
+//     success: function (data) {
+//       console.log("success");
+//       cpu_n = data.response;
+//       return cpu_n
+//     },
+//     error: function() {
+//       console.log("error");
+//     }
+//   });
+// }
+
 
 
 
